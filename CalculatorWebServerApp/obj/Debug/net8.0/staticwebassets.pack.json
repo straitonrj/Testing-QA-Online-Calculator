@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CalculatorWebServerApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CalculatorWebServerApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CalculatorWebServerApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CalculatorWebServerApp.props",
+      "PackagePath": "build\\CalculatorWebServerApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CalculatorWebServerApp.props",
+      "PackagePath": "buildMultiTargeting\\CalculatorWebServerApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CalculatorWebServerApp.props",
+      "PackagePath": "buildTransitive\\CalculatorWebServerApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

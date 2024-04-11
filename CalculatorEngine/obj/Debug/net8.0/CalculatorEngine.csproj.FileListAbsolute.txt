@@ -1,0 +1,11 @@
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\bin\Debug\net8.0\CalculatorEngine.deps.json
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\bin\Debug\net8.0\CalculatorEngine.dll
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\bin\Debug\net8.0\CalculatorEngine.pdb
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.AssemblyInfoInputs.cache
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.AssemblyInfo.cs
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.csproj.CoreCompileInputs.cache
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.dll
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\refint\CalculatorEngine.dll
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.pdb
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\ref\CalculatorEngine.dll

@@ -1,0 +1,121 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\CalculatorWebServerApp.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorEngine\\CalculatorEngine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorEngine\\CalculatorEngine.csproj",
+        "projectName": "CalculatorEngine",
+        "projectPath": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorEngine\\CalculatorEngine.csproj",
+        "packagesPath": "C:\\Users\\strai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorEngine\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\strai\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\strai\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\CalculatorWebServerApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\CalculatorWebServerApp.csproj",
+        "projectName": "CalculatorWebServerApp",
+        "projectPath": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\CalculatorWebServerApp.csproj",
+        "packagesPath": "C:\\Users\\strai\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorWebServerApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\strai\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorEngine\\CalculatorEngine.csproj": {
+                "projectPath": "C:\\Users\\strai\\RiderProjects\\Calculator\\CalculatorEngine\\CalculatorEngine.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\strai\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorWebServerApp", "CalculatorWebServerApp\CalculatorWebServerApp.csproj", "{CBDB497A-8392-4FBB-ADD2-1CA915442746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEngine", "CalculatorEngine\CalculatorEngine.csproj", "{0E5A4878-1C3E-409C-A199-980CE40A33FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEngineUnitTests", "CalculatorEngineUnitTests\CalculatorEngineUnitTests.csproj", "{25B66D0B-F91E-485E-9F73-5EB2FC6AF3D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEndToEndTests", "CalculatorEndToEndTests\CalculatorEndToEndTests.csproj", "{FC2EC507-2713-41F2-913F-8E8DFC9E5542}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBDB497A-8392-4FBB-ADD2-1CA915442746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBDB497A-8392-4FBB-ADD2-1CA915442746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBDB497A-8392-4FBB-ADD2-1CA915442746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBDB497A-8392-4FBB-ADD2-1CA915442746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5A4878-1C3E-409C-A199-980CE40A33FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5A4878-1C3E-409C-A199-980CE40A33FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5A4878-1C3E-409C-A199-980CE40A33FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5A4878-1C3E-409C-A199-980CE40A33FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25B66D0B-F91E-485E-9F73-5EB2FC6AF3D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25B66D0B-F91E-485E-9F73-5EB2FC6AF3D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25B66D0B-F91E-485E-9F73-5EB2FC6AF3D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25B66D0B-F91E-485E-9F73-5EB2FC6AF3D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2EC507-2713-41F2-913F-8E8DFC9E5542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2EC507-2713-41F2-913F-8E8DFC9E5542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2EC507-2713-41F2-913F-8E8DFC9E5542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2EC507-2713-41F2-913F-8E8DFC9E5542}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Calculator</h1>
+
+@{
+    double output = CalculatorEngine.CalculatorEngineImplementation.Add(17.25f, 3.1234f);
+}
+
+<h2>@output</h2>
