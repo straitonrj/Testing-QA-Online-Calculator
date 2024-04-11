@@ -9,3 +9,4 @@ C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\Calcul
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\refint\CalculatorEngine.dll
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.pdb
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\ref\CalculatorEngine.dll
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.sourcelink.json

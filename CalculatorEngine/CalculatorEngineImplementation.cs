@@ -42,13 +42,21 @@ public class CalculatorEngineImplementation
         return (float)Math.Pow(inputA,inputB);
     }
     //Need to put root method here, should root use exponent? Add inputB by itself until it reaches one?
+    
 
     public static float Log(float inputA, float inputB)
     {
         //preq-Engine-10
         return (float)Math.Log(inputA, inputB);
     }
-    //A only Methods are as follows:
+    
+    public static float Root(float inputA, float inputB)
+    {
+        //preq-Engine-11
+        //using the reciprocal method to turn inputB into a fraction which can then be used as an exponent
+        inputB = Reciprocal(inputB);
+        return Exponent(inputA, inputB);
+    }
     
     //Tested in separate application, works
     public static float Factorial(float inputA)
@@ -56,7 +64,7 @@ public class CalculatorEngineImplementation
         //preq-Engine-12
         if (inputA % 1 != 0)
         {
-            inputA = (float)Math.Ceiling(inputA);
+            inputA = (float)Math.Round(inputA);
             //Factorial(inputA);
         }
         if (inputA <= 1)

@@ -100,3 +100,4 @@ C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\bin\Debug\net8.0\CoverletSourceRootsMapping_CalculatorEngineUnitTests
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\bin\Debug\net8.0\CalculatorEngine.dll
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\bin\Debug\net8.0\CalculatorEngine.pdb
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\CalculatorEngineUnitTests.sourcelink.json
