@@ -1,6 +1,9 @@
 ﻿@page "/"
+@using CalculatorEngine
+@using System.Linq.Expressions
+@using System.Reflection.Metadata
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Calculator</PageTitle>
 
 <h1>Calculator</h1>
 
@@ -9,3 +12,75 @@
 }
 
 <h2>@output</h2>
+
+
+<button class="reset" @onclick="IncrementCount">Clear</button>
+<form>
+<!-- input A -->
+<label for="inputA">Input A</label>
+<input type="text" id="inputA" value="0" name="inputA"><br/><br/>
+
+<!-- input B -->
+<label for="inputB">Input B</label>
+<input type="text" id="inputB" value="0" name="inputB"><br/><br/>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>A and B</th>
+        <th>A only</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <button class="btn btn-secondary" @onclick="@Add">A + B</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Subtract">A - B</button>
+        </td>
+    </tr>
+    
+    </tbody>
+</table>
+<input type="submit" value="submit">
+
+@code {
+    //Model
+    private string Display = "penis";
+    private void Add()
+    {
+        float inputA = 5.5f;
+        float inputB = 4.5f;
+        Display = inputA + " + " + inputB + " = " + CalculatorEngine.CalculatorEngineImplementation.Add(inputA, inputB);
+    }
+
+    private void Subtract()
+    {
+        Display = "poop";
+    }
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+    //Sets input to 0
+
+}
+</form>
+<p>@Display</p>
+<h2>@output</h2>
+<!-- input B <form action="/Home.razor">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+-->
