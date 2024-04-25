@@ -2,85 +2,330 @@
 @using CalculatorEngine
 @using System.Linq.Expressions
 @using System.Reflection.Metadata
+@rendermode InteractiveServer
 
 <PageTitle>Calculator</PageTitle>
 
 <h1>Calculator</h1>
 
-@{
-    double output = CalculatorEngine.CalculatorEngineImplementation.Add(17.25f, 3.1234f);
-}
+<div class="col-sm-6">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text text-@TextColor" style="background-color: @CardColor">@Display</p>
 
-<h2>@output</h2>
-
-
-<button class="reset" @onclick="IncrementCount">Clear</button>
-<form>
-<!-- input A -->
-<label for="inputA">Input A</label>
-<input type="text" id="inputA" value="0" name="inputA"><br/><br/>
-
-<!-- input B -->
-<label for="inputB">Input B</label>
-<input type="text" id="inputB" value="0" name="inputB"><br/><br/>
+        </div>
+    </div>
+</div>
+<br/><br/>
 
 <table class="table">
     <thead>
     <tr>
+        <th><h5>InputA</h5></th>
+
+        <th><h5>InputB</h5></th>
+
+        <th><h5><button class="reset" @onclick="@Clear">Clear</button></h5></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <input @bind="InputA"/>
+        </td>
+
+        <td>
+            <input @bind="InputB"/>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+    <table class="table">
+    <thead>
+    <tr>
         <th>A and B</th>
         <th>A only</th>
+
     </tr>
     </thead>
     <tbody>
     <tr>
         <td>
             <button class="btn btn-secondary" @onclick="@Add">A + B</button><br/><br/>
-            <button class="btn btn-secondary" @onclick="@Subtract">A - B</button>
+            <button class="btn btn-secondary" @onclick="@Subtract">A - B</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Multiply">A * B</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Divide">A / B</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Equal">A == B</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Exponent">A ^ B</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Log">A log B</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Root">A root B</button><br/><br/>
+        </td>
+
+        <td>
+            <button class="btn btn-secondary" @onclick="@Factorial">A!</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Sin">sin A</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Cos">cos A</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Tan">Tan A</button><br/><br/>
+            <button class="btn btn-secondary" @onclick="@Reciprocal">1 / A</button><br/><br/>
         </td>
     </tr>
-    
     </tbody>
 </table>
-<input type="submit" value="submit">
 
-@code {
+    @code {
+
+        string InputA = "0";
+
+        string InputB = "0";
+
+        string CardColor = "#FFECD7";
+        string TextColor = "black";
+        
     //Model
-    private string Display = "penis";
+    private string Display = "Enter value(s) below and select an operation";
+
+    private void Clear()
+    {
+        Display = "Enter value(s) below and select an operation";
+        InputA = "0";
+        InputB = "0";
+        SuccessColor();
+    }
+
+    private void SuccessColor()
+    {
+        CardColor = "#FFECD7";
+        TextColor = "black";
+    }
+
+    private void ErrorColor()
+    {
+        CardColor = "#B70F0A";
+        TextColor = "white";
+    }
+    
+    private bool CanBeConverted(string UserInput)
+    {
+        try
+        {
+            float NumericValue = float.Parse(UserInput);
+            return true;
+        }
+        catch (Exception e)
+        {
+            Display = "Please enter only valid numbers";
+            ErrorColor();
+        }
+        return false;
+    }
+
+    private float ConvertStringToFloat(string UserInput)
+    {
+        return float.Parse(UserInput);
+    }
+    
+    //inputs A and B
     private void Add()
     {
-        float inputA = 5.5f;
-        float inputB = 4.5f;
-        Display = inputA + " + " + inputB + " = " + CalculatorEngine.CalculatorEngineImplementation.Add(inputA, inputB);
+        if (CanBeConverted(InputA) && CanBeConverted(InputB))
+        {
+            float inputA = ConvertStringToFloat(InputA);
+            float inputB = ConvertStringToFloat(InputB);
+            SuccessColor();
+            Display = inputA + " + " + inputB + " = " + CalculatorEngine.CalculatorEngineImplementation.Add(inputA, inputB);
+        }
     }
 
     private void Subtract()
     {
-        Display = "poop";
+        if (CanBeConverted(InputA) && CanBeConverted(InputB))
+        {
+            float inputA = ConvertStringToFloat(InputA);
+            float inputB = ConvertStringToFloat(InputB);
+            SuccessColor();
+            Display = inputA + " - " + inputB + " = " + CalculatorEngine.CalculatorEngineImplementation.Subtract(inputA, inputB);
+        }
+       
     }
-    private int currentCount = 0;
 
-    private void IncrementCount()
+    private void Multiply()
     {
-        currentCount++;
+        if (CanBeConverted(InputA) && CanBeConverted(InputB))
+        {
+            float inputA = ConvertStringToFloat(InputA);
+            float inputB = ConvertStringToFloat(InputB);
+            SuccessColor();
+            Display = inputA + " * " + inputB + " = " + CalculatorEngine.CalculatorEngineImplementation.Multiply(inputA, inputB); 
+        }
+        
     }
-    //Sets input to 0
 
-}
-</form>
-<p>@Display</p>
-<h2>@output</h2>
-<!-- input B <form action="/Home.razor">
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
--->
+    private void Divide()
+    {
+        try
+        {
+            if (CanBeConverted(InputA) && CanBeConverted(InputB))
+            {
+                float inputA = ConvertStringToFloat(InputA);
+                float inputB = ConvertStringToFloat(InputB);
+                SuccessColor();
+                Display = inputA + " / " + inputB + " = " + CalculatorEngine.CalculatorEngineImplementation.Divide(inputA, inputB);
+            }
+        }
+        catch (Exception e)
+        {
+            Display = "Not a number";
+            ErrorColor();
+        }
+    }
+
+    private void Equal()
+    {
+        if (CanBeConverted(InputA) && CanBeConverted(InputB))
+        {
+            float inputA = ConvertStringToFloat(InputA);
+            float inputB = ConvertStringToFloat(InputB);
+            if (CalculatorEngine.CalculatorEngineImplementation.Equals(inputA, inputB))
+            {
+                Display = inputA + " == " + inputB;
+            }
+            else
+            {
+                Display = inputA + " != " + inputB;
+            }
+            SuccessColor();
+        }
+        
+    }
+
+    private void Exponent()
+    {
+        if (CanBeConverted(InputA) && CanBeConverted(InputB))
+        {
+            float inputA = ConvertStringToFloat(InputA);
+            float inputB = ConvertStringToFloat(InputB);
+            SuccessColor();
+            Display = inputA + " ^ " + inputB + " = " + CalculatorEngine.CalculatorEngineImplementation.Exponent(inputA, inputB);
+        }
+        
+    }
+
+    private void Log()
+    {
+        if (CanBeConverted(InputA) && CanBeConverted(InputB))
+        {
+            float inputA = ConvertStringToFloat(InputA);
+            float inputB = ConvertStringToFloat(InputB);
+            if (inputB != 0 && inputB != 1)
+            {
+                SuccessColor();
+                Display = inputA + " log " + inputB + " = " + CalculatorEngine.CalculatorEngineImplementation.Log(inputA, inputB); 
+            }
+            else
+            {
+                ErrorColor();
+                Display = "Not a number";
+            }
+            
+        }
+        
+    }
+
+    private void Root()
+    {
+        try
+        {
+            if (CanBeConverted(InputA) && CanBeConverted(InputB))
+            {
+                float inputA = ConvertStringToFloat(InputA);
+                float inputB = ConvertStringToFloat(InputB);
+                SuccessColor();
+                Display = inputA + " root " + inputB + " = " + CalculatorEngine.CalculatorEngineImplementation.Root(inputA, inputB);
+            }
+        }
+        catch(Exception e)
+        {
+            Display = "Not a number";
+            ErrorColor();
+        }
+    }
+
+    //input A only
+    private void Factorial()
+    {
+        if (CanBeConverted(InputA))
+        {
+            float inputA = ConvertStringToFloat(InputA);
+            SuccessColor();
+            Display = inputA + "! = " + CalculatorEngineImplementation.Factorial(inputA);
+        }
+
+    }
+
+    private void Sin()
+    {
+        if (CanBeConverted(InputA))
+        {
+            float inputA = ConvertStringToFloat(InputA);
+            SuccessColor();
+            Display = "Sin("+ inputA+ ") = " + CalculatorEngineImplementation.Sin(inputA);
+        }
+        
+    }
+
+    private void Cos()
+    {
+        if (CanBeConverted(InputA))
+        {
+            float inputA = ConvertStringToFloat(InputA);
+            SuccessColor();
+            Display = "Cos("+ inputA+ ") = " + CalculatorEngineImplementation.Cos(inputA);
+        }
+        
+    }
+
+    private void Tan()
+    {
+        try
+        {
+            if (CanBeConverted(InputA))
+            {
+                float inputA = ConvertStringToFloat(InputA);
+                SuccessColor();
+                Display = "Tan(" + inputA + ") = " + CalculatorEngineImplementation.Tan(inputA);
+            }
+        }
+        catch (Exception e)
+        {
+            Display = "Not a number";
+            ErrorColor();
+        }
+        
+    }
+
+    private void Reciprocal()
+    {
+        try
+        {
+            if (CanBeConverted(InputA))
+            {
+                float inputA = ConvertStringToFloat(InputA);
+                SuccessColor();
+                Display = "1 / " + inputA + " = " + CalculatorEngineImplementation.Reciprocal(inputA);
+            }
+        }
+        catch (Exception e)
+        {
+            Display = "Not a number";
+            ErrorColor();
+        }
+        
+    }
+
+    }
+
+

@@ -307,10 +307,10 @@ public class UnitTests
         //arrange
         float TestFloatA = 25f;
         float TestFloatB = 2f;
-        
+
         //act
         float Actual = CalculatorEngineImplementation.Root(TestFloatA, TestFloatB);
-        
+
         //assert
         Assert.That(Actual, Is.EqualTo(5).Within(Epsilon));
     }
@@ -321,10 +321,37 @@ public class UnitTests
         //arrange
         float TestFloatA = 64f;
         float TestFloatB = 0f;
-        
+
         //assert
         Assert.Throws<DivideByZeroException>(() =>
             CalculatorEngineImplementation.Root(TestFloatA, TestFloatB));
     }
 
+    [Test]
+    public void Equals_DiffDecimalValues_ReturnsFalse()
+    {
+        //arrange
+        float TestFloatA = 3.33333335f;
+        float TestFloatB = 3.333333f;
+        
+        //act
+        bool Actual = CalculatorEngineImplementation.Equals(TestFloatA, TestFloatB);
+        
+        //assert
+        Assert.That(Actual, Is.EqualTo(false));
+    }
+    
+    [Test]
+    public void Equals_DecimalValues_ReturnsTrue()
+    {
+        //arrange
+        float TestFloatA = 3.33333333f;
+        float TestFloatB = 3.33333333f;
+        
+        //act
+        bool Actual = CalculatorEngineImplementation.Equals(TestFloatA, TestFloatB);
+        
+        //assert
+        Assert.That(Actual, Is.EqualTo(true));
+    }
 }

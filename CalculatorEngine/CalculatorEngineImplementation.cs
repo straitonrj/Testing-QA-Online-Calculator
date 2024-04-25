@@ -34,7 +34,19 @@ public class CalculatorEngineImplementation
         }
     }
     
-    //preq-Engine-8 Equals must go here
+    //preq-Engine-8
+    public static bool Equals(float inputA, float inputB)
+    {
+        float DiffOfValues = inputA - inputB;
+        float WithinValue = 0.00000001f;
+        float NegativeWithinValue = -0.000000001f;
+        if (DiffOfValues< WithinValue && DiffOfValues> NegativeWithinValue)
+        {
+            return true;
+        }
+
+        return false;
+    }
     
     public static float Exponent(float inputA, float inputB)
     {
