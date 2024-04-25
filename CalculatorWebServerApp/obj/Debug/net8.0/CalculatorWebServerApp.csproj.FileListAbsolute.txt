@@ -31,3 +31,4 @@ C:\Users\strai\RiderProjects\Calculator\CalculatorWebServerApp\bin\Debug\net8.0\
 C:\Users\strai\RiderProjects\Calculator\CalculatorWebServerApp\bin\Debug\net8.0\CalculatorEngine.pdb
 C:\Users\strai\RiderProjects\Calculator\CalculatorWebServerApp\obj\Debug\net8.0\CalculatorWebServerApp.csproj.AssemblyReference.cache
 C:\Users\strai\RiderProjects\Calculator\CalculatorWebServerApp\obj\Debug\net8.0\CalculatorWebServerApp.csproj.CopyComplete
+C:\Users\strai\RiderProjects\Calculator\CalculatorWebServerApp\obj\Debug\net8.0\CalculatorWebServerApp.sourcelink.json

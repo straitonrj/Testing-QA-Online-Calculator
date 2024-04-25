@@ -91,7 +91,6 @@ C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\CalculatorEngineUnitTests.AssemblyInfoInputs.cache
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\CalculatorEngineUnitTests.AssemblyInfo.cs
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\CalculatorEngineUnitTests.csproj.CoreCompileInputs.cache
-C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\CalculatorEngineUnitTests.csproj.CopyComplete
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\CalculatorEngineUnitTests.dll
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\refint\CalculatorEngineUnitTests.dll
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\CalculatorEngineUnitTests.pdb
@@ -101,3 +100,4 @@ C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\bin\Debug\net8
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\bin\Debug\net8.0\CalculatorEngine.dll
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\bin\Debug\net8.0\CalculatorEngine.pdb
 C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\CalculatorEngineUnitTests.sourcelink.json
+C:\Users\strai\RiderProjects\Calculator\CalculatorEngineUnitTests\obj\Debug\net8.0\Calculat.4949D58D.Up2Date
