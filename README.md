@@ -22,9 +22,19 @@ all source code for the Calculator project. The Project was created using C#, NU
 This project implements a Model-View-Controller, or MVC, architecture.
 
 ## Executing the Web Application
-
+To execute the web application follow these steps:
+- Open the command prompt
+- Navigate to the directory where you have installed the Calculator solution and navigate to the Calculator directory
+- Once inside of the calculator directory open the CalculatorWebServerApp directory using: cd CalculatorWebServerApp
+- Type "dotnet run" into the command prompt
+- Open a browser and type in "localhost:5194"
+- When you are ready to close the web server, open the command propmt and press Ctrl+C to shut it down
 ## Executing Unit Tests
-
+To Execute the unit tests follow these steps:
+- Open the command prompt
+- Navigate to the directory where you have installed the Calculator solution; Ex: cd RiderProjects, cd Calculator...
+- Open the CalculatorEngineUnitTests directory using: cd CalculatorEngineUnitTests
+- Once in this directory, type "dotnet test" into the command propmpt and watch as the tests begin to run and pass!
 ## Reviewing Unit Test Coverage
 
 ## Executing End-To-End Tests
