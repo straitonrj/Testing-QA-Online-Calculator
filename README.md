@@ -62,7 +62,9 @@ The coverage that my Calculator Logic achieved was 100%.
 ![Calculator Logic](./images/TestCoverage.png)
 
 ## Executing End-To-End Tests
-In order to execute the end-to-end tests please follow the previous steps for executing the web application
+In order to execute the end-to-end tests please follow the previous steps for executing the web application. Note that these tests can be flaky when executed simultaneously and fail even though they all succeed
+when ran individually. I believe this problem stems from the variables being taken in before Playwright can input the test data. If you look at the tests you can see that I attempted to fix this by
+making the page refresh but unfortunately it did not help.
 - Open a new tab in the terminal and navigate back to the Calculator directory
 - Once in the Calculator directory navigate to the CalculatorEndToEndTests directory
 - Enter "dotnet run" and see the results
