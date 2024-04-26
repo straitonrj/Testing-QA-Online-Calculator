@@ -354,4 +354,42 @@ public class UnitTests
         //assert
         Assert.That(Actual, Is.EqualTo(true));
     }
+
+    [Test]
+    public void Log_OfZero_ThrowsException()
+    {
+        //arrange
+        float TestFloatA = 4f;
+        float TestFloatB = 0f;
+        
+        //assert
+        Assert.Throws<Exception>(() =>
+            CalculatorEngineImplementation.Log(TestFloatA, TestFloatB));
+    }
+    
+    [Test]
+    public void Log_OfOne_ThrowsException()
+    {
+        //arrange
+        float TestFloatA = 4f;
+        float TestFloatB = 1f;
+        
+        //assert
+        Assert.Throws<Exception>(() =>
+            CalculatorEngineImplementation.Log(TestFloatA, TestFloatB));
+    }
+
+    [Test]
+    public void Log_NormalValues_ReturnsCorrectly()
+    {
+        //arrange
+        float TestFloatA = 8f;
+        float TestFloatB = 2f;
+        
+        //act
+        float Actual = CalculatorEngineImplementation.Log(TestFloatA, TestFloatB);
+        
+        //assert
+        Assert.That(Actual, Is.EqualTo(3f));
+    }
 }

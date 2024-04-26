@@ -11,7 +11,7 @@
 <div class="col-sm-6">
     <div class="card">
         <div class="card-body">
-            <p class="card-text text-@TextColor" style="background-color: @CardColor">@Display</p>
+            <p class="card-text text-@TextColor" aria-label="output" style="background-color: @CardColor">@Display</p>
 
         </div>
     </div>
@@ -31,11 +31,11 @@
     <tbody>
     <tr>
         <td>
-            <input @bind="InputA"/>
+            <input @bind="InputA" aria-label="inputA"/>
         </td>
 
         <td>
-            <input @bind="InputB"/>
+            <input @bind="InputB" aria-label="inputB"/>
         </td>
     </tr>
     </tbody>

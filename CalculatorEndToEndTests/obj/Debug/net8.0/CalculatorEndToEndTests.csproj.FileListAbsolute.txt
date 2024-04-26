@@ -91,7 +91,6 @@ C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0
 C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0\CalculatorEndToEndTests.AssemblyInfoInputs.cache
 C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0\CalculatorEndToEndTests.AssemblyInfo.cs
 C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0\CalculatorEndToEndTests.csproj.CoreCompileInputs.cache
-C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0\CalculatorEndToEndTests.csproj.CopyComplete
 C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0\CalculatorEndToEndTests.dll
 C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0\refint\CalculatorEndToEndTests.dll
 C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0\CalculatorEndToEndTests.pdb
@@ -404,3 +403,4 @@ C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\bin\Debug\net8.0
 C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\bin\Debug\net8.0\Microsoft.Playwright.NUnit.dll
 C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\bin\Debug\net8.0\Microsoft.Playwright.TestAdapter.dll
 C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0\CalculatorEndToEndTests.sourcelink.json
+C:\Users\strai\RiderProjects\Calculator\CalculatorEndToEndTests\obj\Debug\net8.0\Calculat.A46E2F59.Up2Date

@@ -58,6 +58,10 @@ public class CalculatorEngineImplementation
 
     public static float Log(float inputA, float inputB)
     {
+        if (inputB == 0 || inputB == 1)
+        {
+            throw new Exception("Invalid");
+        }
         //preq-Engine-10
         return (float)Math.Log(inputA, inputB);
     }
