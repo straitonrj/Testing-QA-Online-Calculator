@@ -68,7 +68,7 @@ making the page refresh but unfortunately it did not help.
 - Open a new tab in the terminal and navigate back to the Calculator directory
 - Once in the Calculator directory navigate to the CalculatorEndToEndTests directory
 - Enter "dotnet run" and see the results
-- Don't forget to close the web application when you are done, this can be done with Cntrl+C
+- Don't forget to close the web application when you are done, this can be done with Ctrl+C
 
 ## Final Video Presentation 
 [Please watch the video presentation here](https://youtu.be/U5Bk7IaGYcY)
