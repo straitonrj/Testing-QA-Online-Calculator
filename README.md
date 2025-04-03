@@ -1,6 +1,6 @@
-# KSU SWE 3643 Software Testing and Quality Assurance Semester Project: Web-Based Calculator
+# Web-Based Calculator Quality Assurance Project
 
-Welcome to the project repository for my calculator Project assigned in Software Testing and Quality Assurance. Here you will find
+Welcome to the project repository for my calculator project assigned in Software Testing and Quality Assurance. Here you will find
 all source code for the Calculator project. The Project was created using C#, NUnit, Blazor, and Playwright. 
 
 ## Table of Contents
@@ -24,10 +24,10 @@ This project implements a Model-View-Controller, or MVC, architecture. The Calcu
 4) CalculatorEndToEndTests - The end-to-end tests for the web server, developed using Playwright.
 ![Calculator Logic](./images/Architecture.png)
 
-## Enviornment
+## Environment
 ### This is a cross-platform application that works on Windows 11.
 
-To prepare your enviornment to execute this application:
+To prepare your environment to execute this application:
 - [Install .NET 8.0](https://dotnet.microsoft.com/en-us/download)
 - Clone this repository
 - Open up the terminal
